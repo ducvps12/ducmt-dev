@@ -78,10 +78,13 @@
             background-color: #34495e;
         }
         .sidebar a i {
-            font-size: 1.2em; /* Consistent icon size */
-            width: 30px; /* Fixed width for icons */
-            text-align: center; /* Center the icon within the fixed width */
-            margin-right: 10px; /* Space between icon and text */
+            font-size: 1.2em;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
         }
         .body-shift {
             margin-left: 250px;
@@ -151,6 +154,7 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            min-height: 60px; /* Ensure enough height for centering */
         }
         .link-btn:hover {
             background-color: #34495e;
@@ -158,14 +162,20 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         .link-btn i {
-            font-size: 1.5em; /* Consistent icon size */
-            width: 30px; /* Fixed width for icons */
-            text-align: center; /* Center the icon within the fixed width */
-            margin-right: 10px; /* Space between icon and text */
+            font-size: 1.5em;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
             color: #ffffff;
         }
         .link-btn .text {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center the text */
         }
         .link-btn .text span {
             display: block;
@@ -207,10 +217,12 @@
             .link-btn {
                 padding: 12px;
                 font-size: 0.9em;
+                min-height: 50px; /* Adjusted for smaller screens */
             }
             .link-btn i {
                 font-size: 1.2em;
-                width: 25px; /* Adjusted for smaller screens */
+                width: 25px;
+                height: 25px;
             }
             .sidebar {
                 width: 200px;
@@ -223,8 +235,9 @@
                 margin-left: 200px;
             }
             .sidebar a i {
-                font-size: 1em; /* Smaller icon size for mobile */
-                width: 25px; /* Adjusted for smaller screens */
+                font-size: 1em;
+                width: 25px;
+                height: 25px;
             }
         }
     </style>
