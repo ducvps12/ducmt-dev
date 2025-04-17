@@ -1,0 +1,231 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Bio - MTD VPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome cho icon -->
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32"> <!-- Favicon placeholder -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Header */
+        .header-bar {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .menu-icon {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .subscribe-btn {
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .subscribe-btn:hover {
+            background-color: #34495e;
+        }
+        /* Main Content */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 80px 20px 20px;
+            text-align: center;
+            margin: 20px;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 15px;
+            border: 3px solid #2c3e50;
+        }
+        .title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 5px 0;
+            text-transform: uppercase;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #2c3e50;
+            font-size: 1.4em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #3498db;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .link-btn:hover {
+            background-color: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .link-btn i {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+        .link-btn .text {
+            flex: 1;
+        }
+        .link-btn .text span {
+            display: block;
+            font-size: 0.85em;
+            font-weight: normal;
+            color: #d1d1d1;
+            margin-top: 5px;
+            line-height: 1.2;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .footer a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #3498db;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 70px 15px 15px;
+                margin: 10px;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+            .title {
+                font-size: 1.5em;
+            }
+            .social-links a {
+                font-size: 1.2em;
+            }
+            .link-btn {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+            .link-btn i {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-bar">
+        <div class="menu-icon">☰</div>
+        <a href="#" class="subscribe-btn">Subscribe</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header">
+            <div class="avatar"></div>
+            <div class="title">MTD VPS</div>
+            <div class="social-links">
+                <a href="mailto:support@mtdvps.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <a href="https://mtdvps.com" class="link-btn">
+            <i class="fas fa-globe"></i>
+            <div class="text">
+                MTDVPS.COM
+                <span>Miền phụ đổi mới mtdvps.com (Hiệu lực từ 16/04/2025)</span>
+            </div>
+        </a>
+        <a href="https://ducvps.shop" class="link-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="text">
+                DUCVPS.SHOP
+                <span>Miền phụ đổi mới ducvps.com bị ddos</span>
+            </div>
+        </a>
+        <a href="https://teavpn.com" class="link-btn">
+            <i class="fas fa-shield-alt"></i>
+            <div class="text">
+                TEAVPN.COM
+                <span>Website cung cấp proxy tính, xóa, thay vùng cáp keo airdrop</span>
+            </div>
+        </a>
+        <a href="https://ducvps.com" class="link-btn">
+            <i class="fas fa-server"></i>
+            <div class="text">
+                DUCVPS.COM
+                <span>Website Cung Cấp Dịch Vụ VPS, Hosting Mb Quốc, Proxy Dân Cư, Proxy Xoay</span>
+            </div>
+        </a>
+        <a href="https://trumvps.shop" class="link-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="text">
+                TRUMVPS.SHOP
+                <span>Miền phụ đổi mới ducvps.com bị ddos</span>
+            </div>
+        </a>
+        <a href="mailto:support@mtdvps.com" class="link-btn">
+            <i class="fas fa-headset"></i>
+            <div class="text">
+                KÊNH SUPPORT CHÍNH - 24/7
+                <span>Hỗ trợ tận tình</span>
+            </div>
+        </a>
+        <div class="footer">
+            <p>MTD VPS | <a href="https://mtdvps.com">mtdvps.com</a> | <a href="mailto:support@mtdvps.com">support@mtdvps.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
